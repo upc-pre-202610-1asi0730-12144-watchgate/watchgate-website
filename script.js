@@ -12,7 +12,6 @@ const firebaseConfig = {
   
   document.addEventListener('DOMContentLoaded', function () {
       
-      // --- Lógica del Menú Móvil ---
       const menuButton = document.getElementById('mobile-menu-button');
       const mobileMenu = document.getElementById('mobile-menu');
       
@@ -29,7 +28,6 @@ const firebaseConfig = {
           }
       }
   
-      // --- Lógica de Modales ---
       const loginModal = document.getElementById('login-modal');
       const registerModal = document.getElementById('register-modal');
       const passwordModal = document.getElementById('password-modal'); 
@@ -80,7 +78,6 @@ const firebaseConfig = {
           }
       });
   
-      // --- Lógica de Autenticación  ---
       const loginForm = document.getElementById('login-form');
       const registerForm = document.getElementById('register-form');
       const passwordForm = document.getElementById('password-form');
@@ -90,7 +87,6 @@ const firebaseConfig = {
       const passwordMessage = document.getElementById('password-message');
   
       if (firebaseConfig.apiKey && firebaseConfig.apiKey !== "¡PEGA TU API KEY AQUÍ!") {
-          // --- MODO 2: SIMULACIÓN ---
           console.warn('Ejecutando en modo de simulación base.');
   
           function simulateLogin(e) {
