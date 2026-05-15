@@ -9,304 +9,214 @@
 <body>
 
 <div class="navbar">
-        <div class="nav-container">
-            <a href="#home" class="logo">
-                <img src="assets/logo-locksight.png" alt="Logo Locksight" class="navbar-logo-img">
-            </a>
-            
-            <div class="nav-links" id="nav-links">
-                <a href="#home">Inicio</a>
-                <a href="#caracteristicas">Características</a>
-                <a href="#planes">Planes</a>
-                <a href="#equipo">Equipo</a>
-            </div>
+    <div class="nav-container">
+        <a href="#home" class="logo">
+            <img src="assets/logo-locksight.png" alt="Logo Locksight" class="navbar-logo-img">
+        </a>
 
-            <div class="nav-buttons">
-                <button id="open-login-button" class="button-outline">Log In</button>
-                <button id="open-register-button" class="button">Sign Up</button>
+        <div class="nav-links" id="nav-links">
+            <a href="#home">Inicio</a>
+            <a href="#caracteristicas">Características</a>
+            <a href="#planes">Planes</a>
+            <a href="#equipo">Equipo</a>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button-outline">Log In</a>
+            <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button">Sign Up</a>
+        </div>
+
+        <button id="mobile-menu-button" class="menu-toggle">☰</button>
+    </div>
+</div>
+
+<div id="mobile-menu" class="mobile-menu hidden">
+    <a href="#home" class="mobile-link">Inicio</a>
+    <a href="#caracteristicas" class="mobile-link">Características</a>
+    <a href="#planes" class="mobile-link">Planes</a>
+    <a href="#equipo" class="mobile-link">Equipo</a>
+    <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button w-100 mt-10">Log In</a>
+</div>
+
+<div class="container">
+    <div class="hero-section" id="home">
+        <div class="hero-text">
+            <h1 class="title-main">El control de tus almacenes, en tus manos.</h1>
+            <p class="text-muted">Monitorea accesos en tiempo real, detecta anomalías y prevén pérdidas mediante sensores IoT. La seguridad de tu negocio desde cualquier lugar.</p>
+            <div class="hero-actions">
+                <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button btn-large">Registrarse</a>
+                <a href="#planes" class="button-outline btn-large ml-15">Planes</a>
             </div>
-            
-            <button id="mobile-menu-button" class="menu-toggle">☰</button>
+        </div>
+        <div class="hero-image">
+            <img src="assets/dashboard-preview.png" alt="Dashboard Locksight" onerror="this.src='https://placehold.co/600x400/f1f1f1/888888?text=Dashboard+Preview';">
         </div>
     </div>
 
-    <div id="mobile-menu" class="mobile-menu hidden">
-        <a href="#home" class="mobile-link">Inicio</a>
-        <a href="#caracteristicas" class="mobile-link">Características</a>
-        <a href="#planes" class="mobile-link">Planes</a>
-        <a href="#equipo" class="mobile-link">Equipo</a>
-        <button id="open-login-button-mobile" class="button w-100 mt-10">Log In</button>
+    <div id="caracteristicas" class="features-section">
+        <p class="section-eyebrow">LAS HERRAMIENTAS QUE TÚ NECESITAS</p>
+        <h2 class="title-section text-center text-dark">Una alternativa diferente al resto</h2>
+
+        <div class="features-grid mt-30">
+            <div class="feature-item">
+                <div class="feature-icon-box">
+                    <img src="assets/icono-alerta.png" alt="Icono Alertas" class="feature-img">
+                </div>
+                <h3 class="text-dark">Alertas inmediatas</h3>
+                <p class="text-muted text-small">Recibe notificaciones en tiempo real ante cualquier eventualidad.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon-box">
+                    <img src="assets/icono-trazabilidad.png" alt="Icono Trazabilidad" class="feature-img">
+                </div>
+                <h3 class="text-dark">Trazabilidad total</h3>
+                <p class="text-muted text-small">Audita el historial detallado de accesos de todos tus sensores.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon-box">
+                    <img src="assets/icono-gestion.png" alt="Icono Gestion" class="feature-img">
+                </div>
+                <h3 class="text-dark">Gestión centralizada</h3>
+                <p class="text-muted text-small">Administra múltiples sucursales y permisos desde un solo panel.</p>
+            </div>
+        </div>
     </div>
 
-    <div class="container">
-        <div class="hero-section" id="home">
-            <div class="hero-text">
-                <h1 class="title-main">El control de tus almacenes, en tus manos.</h1>
-                <p class="text-muted">Monitorea accesos en tiempo real, detecta anomalías y prevén pérdidas mediante sensores IoT. La seguridad de tu negocio desde cualquier lugar.</p>
-                <div class="hero-actions">
-                    <button id="open-register-button-2" class="button btn-large">Registrarse</button>
-                    <a href="#planes" class="button-outline btn-large ml-15 inline-block">Planes</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="assets/dashboard-preview.png" alt="Dashboard Locksight" onerror="this.src='https://placehold.co/600x400/f1f1f1/888888?text=Dashboard+Preview';">
-            </div>
-        </div>
+    <div id="planes" class="planes-section mt-60">
+        <h2 class="title-section text-center text-dark">Elige el plan ideal para tu negocio</h2>
 
-        <div id="caracteristicas" class="features-section">
-            <p class="section-eyebrow">LAS HERRAMIENTAS QUE TÚ NECESITAS</p>
-            <h2 class="title-section text-center text-dark">Una alternativa diferente al resto</h2>
-            
-            <div class="features-grid mt-30">
-                <div class="feature-item">
-                    <div class="feature-icon-box">
-                        <img src="assets/icono-alerta.png" alt="Icono Alertas" class="feature-img">
-                    </div>
-                    <h3 class="text-dark">Alertas inmediatas</h3>
-                    <p class="text-muted text-small">Recibe notificaciones en tiempo real ante cualquier eventualidad.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon-box">
-                        <img src="assets/icono-trazabilidad.png" alt="Icono Trazabilidad" class="feature-img">
-                    </div>
-                    <h3 class="text-dark">Trazabilidad total</h3>
-                    <p class="text-muted text-small">Audita el historial detallado de accesos de todos tus sensores.</p>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon-box">
-                        <img src="assets/icono-gestion.png" alt="Icono Gestion" class="feature-img">
-                    </div>
-                    <h3 class="text-dark">Gestión centralizada</h3>
-                    <p class="text-muted text-small">Administra múltiples sucursales y permisos desde un solo panel.</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="planes" class="planes-section mt-60">
-            <h2 class="title-section text-center text-dark">Elige el plan ideal para tu negocio</h2>
-            
-            <div class="planes-grid">
-                <div class="card plan-card">
-                    <h3 class="text-dark">Básico</h3>
-                    <p class="text-muted">Ideal para bodegas comerciales y pequeños almacenes</p>
-                    <p class="plan-price text-primary">$49<span class="text-small text-muted"><br>por mes / facturación anual</span></p>
-                    <button class="button-outline w-100 mt-20">Empezar</button>
-                    <ul class="plan-list text-muted">
-                        <li>Monitoreo en tiempo real</li>
-                        <li>Alertas básicas (App/Web)</li>
-                        <li>1 Almacén</li>
-                        <li>Soporte estándar</li>
-                    </ul>
-                </div>
-
-                <div class="card plan-card plan-pro">
-                    <div class="badge-recomendado">Recomendado</div>
-                    <p class="text-light">Para empresas logisticas con multiples zonas de acceso</p>
-                    <h3 class="text-white">Premium</h3>
-                    <p class="plan-price text-white">$120<span class="text-small text-light"><br>por mes / facturación anual</span></p>
-                    <button class="button-white w-100 mt-20">Empezar</button>
-                    <ul class="plan-list text-white">
-                        <li>Todo lo del plan Básico</li>
-                        <li>Historial y auditoría</li>
-                        <li>Múltiples usuarios y roles</li>
-                        <li>Hasta 3 Almacenes</li>
-                    </ul>                
-                </div>
-
-                <div class="card plan-card">
-                    <h3 class="text-dark">Corporativo</h3>
-                    <p class="text-muted">Seguridad de alto nivel y analítica para grandes infraestructuras</p>
-                    <p class="plan-price text-primary">Cotizar<span class="text-small text-muted"><br>Diseñado a la medidad de tu operación</span></p>
-                    <button class="button-outline w-100 mt-20">Empezar</button>
-                    <ul class="plan-list text-muted">
-                        <li>Todo lo del plan Pro</li>
-                        <li>Almacenes ilimitados</li>
-                        <li>Reglas IoT automáticas</li>
-                        <li>Soporte 24/7 prioritario</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div id="equipo" class="team-section mt-60">
-            <p class="section-eyebrow">NUESTRO EQUIPO</p>
-            <h2 class="title-section text-center text-dark">Integrantes de Locksight</h2>
-            <div class="team-grid mt-30">
-                <div class="team-member">
-                    <img src="assets/AlonsoKohatsu.png.jpeg" alt="Alonso Enrique" class="member-img">
-                    <h3 class="member-name text-dark">Alonso Enrique<br>Kohatsu Higa</h3>
-                    <p class="member-role text-muted">Ingeniero de Software</p>
-                </div>
-                <div class="team-member">
-                    <img src="assets/LuisBarbales.png.jpeg" alt="Luis Alexis" class="member-img">
-                    <h3 class="member-name text-dark">Luis Alexis<br>Bardales Tejada</h3>
-                    <p class="member-role text-muted">Ingeniero de Software</p>
-                </div>
-                <div class="team-member">
-                    <img src="assets/FabricioLozano.png.jpeg" alt="Fabricio Jofred" class="member-img">
-                    <h3 class="member-name text-dark">Fabricio Jofred<br>Lozano Quispe</h3>
-                    <p class="member-role text-muted">Ingeniero de Software</p>
-                </div>
-                <div class="team-member">
-                    <img src="assets/KelberSandoval.png.jpeg" alt="Kelber Yamir" class="member-img">
-                    <h3 class="member-name text-dark">Kelber Yamir<br>Sandoval Aiquipa</h3>
-                    <p class="member-role text-muted">Ingeniero de Software</p>
-                </div>
-                <div class="team-member">
-                    <img src="assets/RodrigoVite.png.jpeg" alt="Rodrigo Matias" class="member-img">
-                    <h3 class="member-name text-dark">Rodrigo Matias<br>Vite Celis</h3>
-                    <p class="member-role text-muted">Ingeniero de Software</p>
-                </div>
-            </div>
-        </div>
-
-                <div id="testimonios" class="testimonials-section mt-60">
-            <h2 class="title-section text-center text-dark">Amado por la Comunidad</h2>
-            <div class="testimonials-grid mt-30">
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="avatar avatar-cp">CP</div>
-                        <h3 class="text-dark">Carlos Pérez</h3>
-                    </div>
-                    <p class="text-muted mt-15">Antes vivía con la incertidumbre de qué pasaba en mi almacén de noche o los fines de semana. Con Locksight, recibo una alerta inmediata en mi celular si hay alguna apertura fuera de horario. Esa tranquilidad no tiene precio.</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="avatar avatar-aa">AA</div>
-                        <h3 class="text-dark">Alex Alvarez</h3>
-                    </div>
-                    <p class="text-muted mt-15">Las cámaras tradicionales ya no nos servían, solo para ver cómo nos robaban después del hecho. La precisión de Locksight nos ha permitido pasar a un modelo preventivo reduciendo pérdidas.</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="avatar avatar-cd">CD</div>
-                        <h3 class="text-dark">Carla Delgado</h3>
-                    </div>
-                    <p class="text-muted mt-15">Gestionar los accesos de tres centros logísticos distintos era un dolor de cabeza. Desde que implementamos el dashboard de Locksight, administramos los permisos por zonas desde un solo lugar.</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="avatar avatar-cq">CQ</div>
-                        <h3 class="text-dark">Camila Quispe</h3>
-                    </div>
-                    <p class="text-muted mt-15">Pensé que implementar tecnología IoT iba a ser súper complejo. Me equivoqué. El sistema fue rápido de instalar y la plataforma es tan intuitiva que nuestro personal aprendió a usarla el primer día.</p>
-                </div>
-            </div>
-        </div>  
-
-        <div class="cta-section mt-60 text-center">
-            <h2 class="title-section text-dark">¿Aún no te convence? ¡Regístrate y elige un plan!</h2>
-            <p class="text-muted cta-desc">Regístrate en minutos y accede a alguno de nuestros planes. Desde el primer mes vas a poder notar beneficios y no te va a costar utilizar la plataforma.</p>
-            <button class="button btn-large mt-20">Regístrate Ya</button>
-        </div>
-
-    </div>
-
-    <footer class="footer">
-        <div class="container footer-top">
-            <div class="footer-brand">
-                <h2 class="logo-text text-white">locksight</h2>
-                <p class="text-small text-light">watchgate</p>
-            </div>
-            <div>
-                <button class="button">Iniciar sesión</button>
-            </div>
-        </div>
-        <hr class="footer-divider">
-        <div class="container grid-3 mt-30 mb-30">
-            <div class="footer-col">
-                <h3 class="text-white">Términos</h3>
-                <ul>
-                    <li><a href="#">Términos de Servicio</a></li>
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Política de Cookies</a></li>
+        <div class="planes-grid">
+            <div class="card plan-card">
+                <h3 class="text-dark">Básico</h3>
+                <p class="text-muted">Ideal para bodegas comerciales y pequeños almacenes</p>
+                <p class="plan-price text-primary">$49<span class="text-small text-muted"><br>por mes / facturación anual</span></p>
+                <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button-outline w-100 mt-20">Empezar</a>
+                <ul class="plan-list text-muted">
+                    <li>Monitoreo en tiempo real</li>
+                    <li>Alertas básicas (App/Web)</li>
+                    <li>1 Almacén</li>
+                    <li>Soporte estándar</li>
                 </ul>
             </div>
-            <div class="footer-col">
-                <h3 class="text-white">Soporte</h3>
-                <ul>
-                    <li><a href="#">Feedback</a></li>
-                    <li><a href="#">Documentación</a></li>
+
+            <div class="card plan-card plan-pro">
+                <div class="badge-recomendado">Recomendado</div>
+                <p class="text-light">Para empresas logisticas con multiples zonas de acceso</p>
+                <h3 class="text-white">Premium</h3>
+                <p class="plan-price text-white">$120<span class="text-small text-light"><br>por mes / facturación anual</span></p>
+                <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button-white w-100 mt-20">Empezar</a>
+                <ul class="plan-list text-white">
+                    <li>Todo lo del plan Básico</li>
+                    <li>Historial y auditoría</li>
+                    <li>Múltiples usuarios y roles</li>
+                    <li>Hasta 3 Almacenes</li>
                 </ul>
             </div>
-            <div class="footer-col">
-                <h3 class="text-white">Redes</h3>
-                <div class="store-badges">
-                    <div class="badge">[ App Store ]</div>
-                    <div class="badge">[ Google Play ]</div>
-                </div>
-                <h3 class="text-white mt-20">Síguenos en:</h3>
-                <div class="social-links">
-                    <a href="#">[ YT ]</a>
-                    <a href="#">[ FB ]</a>
-                    <a href="#">[ TW ]</a>
-                    <a href="#">[ IG ]</a>
-                    <a href="#">[ IN ]</a>
-                </div>
+
+            <div class="card plan-card">
+                <h3 class="text-dark">Corporativo</h3>
+                <p class="text-muted">Seguridad de alto nivel y analítica para grandes infraestructuras</p>
+                <p class="plan-price text-primary">Cotizar<span class="text-small text-muted"><br>Diseñado a la medidad de tu operación</span></p>
+                <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button-outline w-100 mt-20">Empezar</a>
+                <ul class="plan-list text-muted">
+                    <li>Todo lo del plan Pro</li>
+                    <li>Almacenes ilimitados</li>
+                    <li>Reglas IoT automáticas</li>
+                    <li>Soporte 24/7 prioritario</li>
+                </ul>
             </div>
         </div>
-        <hr class="footer-divider">
-        <div class="container footer-bottom">
-            <p class="text-left">&copy; 2026 Watchgate. All rights reserved.</p>
-        </div>
-    </footer>
+    </div>
 
-    <div id="login-modal" class="modal hidden">
-        <div class="modal-content card">
-            <span id="close-login-modal" class="close-btn">&times;</span>
-            <h2 class="text-dark">Iniciar Sesión</h2>
-            <form id="login-form">
-                <p class="label-text">Correo Electrónico</p>
-                <input type="email" id="login-email" class="input-field" placeholder="tu@correo.com" required>
-                <p class="label-text">Contraseña</p>
-                <input type="password" id="login-password" class="input-field" placeholder="••••••••" required>
-                <p id="login-error" class="hidden error-text"></p>
-                <button type="submit" class="button w-100 mt-15">Iniciar Sesión</button>
-            </form>
-            <p class="text-center mt-15"><a href="#" id="open-password-link">¿Olvidaste tu contraseña?</a></p>
-            <p class="text-center"><a href="#" id="open-register-link">¿No tienes cuenta? Registrarse</a></p>
+    <div id="equipo" class="team-section mt-60">
+        <p class="section-eyebrow">NUESTRO EQUIPO</p>
+        <h2 class="title-section text-center text-dark">Integrantes de Locksight</h2>
+        <div class="team-grid mt-30">
+            <div class="team-member">
+                <img src="assets/AlonsoKohatsu.png.jpeg" alt="Alonso Enrique" class="member-img">
+                <h3 class="member-name text-dark">Alonso Enrique<br>Kohatsu Higa</h3>
+                <p class="member-role text-muted">Ingeniero de Software</p>
+            </div>
+            <div class="team-member">
+                <img src="assets/LuisBarbales.png.jpeg" alt="Luis Alexis" class="member-img">
+                <h3 class="member-name text-dark">Luis Alexis<br>Bardales Tejada</h3>
+                <p class="member-role text-muted">Ingeniero de Software</p>
+            </div>
+            <div class="team-member">
+                <img src="assets/FabricioLozano.png.jpeg" alt="Fabricio Jofred" class="member-img">
+                <h3 class="member-name text-dark">Fabricio Jofred<br>Lozano Quispe</h3>
+                <p class="member-role text-muted">Ingeniero de Software</p>
+            </div>
+            <div class="team-member">
+                <img src="assets/KelberSandoval.png.jpeg" alt="Kelber Yamir" class="member-img">
+                <h3 class="member-name text-dark">Kelber Yamir<br>Sandoval Aiquipa</h3>
+                <p class="member-role text-muted">Ingeniero de Software</p>
+            </div>
+            <div class="team-member">
+                <img src="assets/RodrigoVite.png.jpeg" alt="Rodrigo Matias" class="member-img">
+                <h3 class="member-name text-dark">Rodrigo Matias<br>Vite Celis</h3>
+                <p class="member-role text-muted">Ingeniero de Software</p>
+            </div>
         </div>
     </div>
 
-    <div id="register-modal" class="modal hidden">
-        <div class="modal-content card">
-            <span id="close-register-modal" class="close-btn">&times;</span>
-            <h2 class="text-dark">Crear Cuenta</h2>
-            <form id="register-form">
-                <p class="label-text">Nombre / Empresa</p>
-                <input type="text" id="reg-nombre" class="input-field" placeholder="Nombre completo" required>
-                <p class="label-text">Correo Electrónico</p>
-                <input type="email" id="reg-email" class="input-field" placeholder="tu@correo.com" required>
-                <p class="label-text">Contraseña</p>
-                <input type="password" id="reg-password" class="input-field" placeholder="••••••••" required>
-                
-                <p class="label-text mt-10">Rol:</p>
-                <div class="radio-group">
-                    <input type="radio" name="role" id="role-admin" value="admin" checked> <label for="role-admin">Admin PYME</label><br>
-                    <input type="radio" name="role" id="role-jefe" value="jefe"> <label for="role-jefe">Jefe Operaciones</label>
-                </div>
-
-                <p id="register-error" class="hidden error-text"></p>
-                <button type="submit" class="button w-100 mt-10">Crear Cuenta</button>
-            </form>
-            <p class="text-center mt-15"><a href="#" id="open-login-link">¿Ya tienes cuenta? Iniciar Sesión</a></p>
-        </div>
+    <div class="cta-section mt-60 text-center">
+        <h2 class="title-section text-dark">¿Aún no te convence? ¡Regístrate y elige un plan!</h2>
+        <p class="text-muted cta-desc">Regístrate en minutos y accede a alguno de nuestros planes. Desde el primer mes vas a poder notar beneficios y no te va a costar utilizar la plataforma.</p>
+        <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button btn-large mt-20">Regístrate Ya</a>
     </div>
 
-    <div id="password-modal" class="modal hidden">
-        <div class="modal-content card">
-            <span id="close-password-modal" class="close-btn">&times;</span>
-            <h2 class="text-dark">Recuperar Contraseña</h2>
-            <p class="text-muted">Ingresa tu correo para enviarte un enlace de recuperación.</p>
-            <form id="password-form">
-                <input type="email" id="pass-email" class="input-field" placeholder="tu@correo.com" required>
-                <p id="password-message" class="hidden success-text"></p>
-                <button type="submit" class="button w-100 mt-15">Enviar Enlace</button>
-            </form>
-            <p class="text-center mt-15"><a href="#" id="back-to-login-link">Volver a Iniciar Sesión</a></p>
+</div>
+
+<footer class="footer">
+    <div class="container footer-top">
+        <div class="footer-brand">
+            <h2 class="logo-text text-white">locksight</h2>
+            <p class="text-small text-light">watchgate</p>
+        </div>
+        <div>
+            <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button">Iniciar sesión</a>
         </div>
     </div>
+    <hr class="footer-divider">
+    <div class="container grid-3 mt-30 mb-30">
+        <div class="footer-col">
+            <h3 class="text-white">Términos</h3>
+            <ul>
+                <li><a href="#">Términos de Servicio</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Política de Cookies</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3 class="text-white">Soporte</h3>
+            <ul>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Documentación</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3 class="text-white">Redes</h3>
+            <div class="store-badges">
+                <div class="badge">[ App Store ]</div>
+                <div class="badge">[ Google Play ]</div>
+            </div>
+            <h3 class="text-white mt-20">Síguenos en:</h3>
+            <div class="social-links">
+                <a href="#">[ YT ]</a>
+                <a href="#">[ FB ]</a>
+                <a href="#">[ TW ]</a>
+                <a href="#">[ IG ]</a>
+                <a href="#">[ IN ]</a>
+            </div>
+        </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="container footer-bottom">
+        <p class="text-left">&copy; 2026 Watchgate. All rights reserved.</p>
+    </div>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
