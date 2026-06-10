@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locksight - Sistema Inteligente de Seguridad</title>
+    <title data-i18n="page_title">Locksight - Intelligent Security System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,19 +11,21 @@
 <div class="navbar">
     <div class="nav-container">
         <a href="#home" class="logo">
-            <img src="assets/logo-locksight.png" alt="Logo Locksight" class="navbar-logo-img">
+            <img src="assets/logo-locksight.png" alt="Locksight Logo" class="navbar-logo-img">
         </a>
 
         <div class="nav-links" id="nav-links">
-            <a href="#home">Inicio</a>
-            <a href="#caracteristicas">Características</a>
-            <a href="#planes">Planes</a>
-            <a href="#equipo">Equipo</a>
+            <a href="#home" data-i18n="nav_inicio">Home</a>
+            <a href="#caracteristicas" data-i18n="nav_caracteristicas">Features</a>
+            <a href="#planes" data-i18n="nav_planes">Plans</a>
+            <a href="#equipo" data-i18n="nav_equipo">Team</a>
         </div>
 
         <div class="nav-buttons">
-            <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button-outline">Log In</a>
-            <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button">Sign Up</a>
+            <button id="btn-lang" class="button-lang">EN</button>
+            
+            <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button-outline" data-i18n="btn_login">Log In</a>
+            <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button" data-i18n="btn_signup">Sign Up</a>
         </div>
 
         <button id="mobile-menu-button" class="menu-toggle">☰</button>
@@ -31,139 +33,205 @@
 </div>
 
 <div id="mobile-menu" class="mobile-menu hidden">
-    <a href="#home" class="mobile-link">Inicio</a>
-    <a href="#caracteristicas" class="mobile-link">Características</a>
-    <a href="#planes" class="mobile-link">Planes</a>
-    <a href="#equipo" class="mobile-link">Equipo</a>
-    <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button w-100 mt-10">Log In</a>
+    <a href="#home" class="mobile-link" data-i18n="nav_inicio">Home</a>
+    <a href="#caracteristicas" class="mobile-link" data-i18n="nav_caracteristicas">Features</a>
+    <a href="#planes" class="mobile-link" data-i18n="nav_planes">Plans</a>
+    <a href="#equipo" class="mobile-link" data-i18n="nav_equipo">Team</a>
+    <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button w-100 mt-10" data-i18n="btn_login">Log In</a>
 </div>
 
 <div class="container">
+
     <div class="hero-section" id="home">
         <div class="hero-text">
-            <h1 class="title-main">El control de tus almacenes, en tus manos.</h1>
-            <p class="text-muted">Monitorea accesos en tiempo real, detecta anomalías y prevén pérdidas mediante sensores IoT. La seguridad de tu negocio desde cualquier lugar.</p>
+            <h1 class="title-main" data-i18n="hero_title">Warehouse control, in your hands.</h1>
+            <p class="text-muted" data-i18n="hero_desc">
+                Monitor access in real time, detect anomalies, and prevent losses using IoT sensors. Business security from anywhere.
+            </p>
             <div class="hero-actions">
-                <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button btn-large">Registrarse</a>
-                <a href="#planes" class="button-outline btn-large ml-15">Planes</a>
+                <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button btn-large" data-i18n="btn_registrarse">Sign Up</a>
+                <a href="#planes" class="button-outline btn-large ml-15" data-i18n="btn_planes">Plans</a>
             </div>
         </div>
+
         <div class="hero-image">
-            <img src="assets/dashboard-preview.png" alt="Dashboard Locksight" onerror="this.src='https://placehold.co/600x400/f1f1f1/888888?text=Dashboard+Preview';">
+            <img src="assets/dashboard-preview.png" alt="Locksight Dashboard"
+                 onerror="this.src='https://placehold.co/600x400/f1f1f1/888888?text=Dashboard+Preview';">
         </div>
     </div>
 
     <div id="caracteristicas" class="features-section">
-        <p class="section-eyebrow">LAS HERRAMIENTAS QUE TÚ NECESITAS</p>
-        <h2 class="title-section text-center text-dark">Una alternativa diferente al resto</h2>
+        <p class="section-eyebrow" data-i18n="features_eyebrow">THE TOOLS YOU NEED</p>
+        <h2 class="title-section text-center text-dark" data-i18n="features_title">A different alternative</h2>
 
         <div class="features-grid mt-30">
+
             <div class="feature-item">
                 <div class="feature-icon-box">
-                    <img src="assets/icono-alerta.png" alt="Icono Alertas" class="feature-img">
+                    <img src="assets/icono-alerta.png" alt="Alerts Icon" class="feature-img">
                 </div>
-                <h3 class="text-dark">Alertas inmediatas</h3>
-                <p class="text-muted text-small">Recibe notificaciones en tiempo real ante cualquier eventualidad.</p>
+                <h3 class="text-dark" data-i18n="feat_1_title">Instant Alerts</h3>
+                <p class="text-muted text-small" data-i18n="feat_1_desc">
+                    Receive real-time notifications for any event.
+                </p>
             </div>
+
             <div class="feature-item">
                 <div class="feature-icon-box">
-                    <img src="assets/icono-trazabilidad.png" alt="Icono Trazabilidad" class="feature-img">
+                    <img src="assets/icono-trazabilidad.png" alt="Traceability Icon" class="feature-img">
                 </div>
-                <h3 class="text-dark">Trazabilidad total</h3>
-                <p class="text-muted text-small">Audita el historial detallado de accesos de todos tus sensores.</p>
+                <h3 class="text-dark" data-i18n="feat_2_title">Full Traceability</h3>
+                <p class="text-muted text-small" data-i18n="feat_2_desc">
+                    Audit detailed access history of all your sensors.
+                </p>
             </div>
+
             <div class="feature-item">
                 <div class="feature-icon-box">
-                    <img src="assets/icono-gestion.png" alt="Icono Gestion" class="feature-img">
+                    <img src="assets/icono-gestion.png" alt="Management Icon" class="feature-img">
                 </div>
-                <h3 class="text-dark">Gestión centralizada</h3>
-                <p class="text-muted text-small">Administra múltiples sucursales y permisos desde un solo panel.</p>
+                <h3 class="text-dark" data-i18n="feat_3_title">Centralized Management</h3>
+                <p class="text-muted text-small" data-i18n="feat_3_desc">
+                    Manage multiple locations and permissions from one dashboard.
+                </p>
             </div>
+
         </div>
     </div>
 
     <div id="planes" class="planes-section mt-60">
-        <h2 class="title-section text-center text-dark">Elige el plan ideal para tu negocio</h2>
+        <h2 class="title-section text-center text-dark" data-i18n="planes_title">
+            Choose the right plan for your business
+        </h2>
 
         <div class="planes-grid">
+
             <div class="card plan-card">
-                <h3 class="text-dark">Básico</h3>
-                <p class="text-muted">Ideal para bodegas comerciales y pequeños almacenes</p>
-                <p class="plan-price text-primary">$49<span class="text-small text-muted"><br>por mes / facturación anual</span></p>
-                <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button-outline w-100 mt-20">Empezar</a>
+                <h3 class="text-dark" data-i18n="plan_basic_title">Basic</h3>
+                <p class="text-muted" data-i18n="plan_basic_desc">
+                    Ideal for small commercial warehouses
+                </p>
+
+                <p class="plan-price text-primary">
+                    <span data-i18n="plan_basic_price">$49</span>
+                    <span class="text-small text-muted"><br>
+                        <span data-i18n="plan_period">per month / annual billing</span>
+                    </span>
+                </p>
+
+                <a href="#" class="button-outline w-100 mt-20" data-i18n="btn_empezar">Get Started</a>
+
                 <ul class="plan-list text-muted">
-                    <li>Monitoreo en tiempo real</li>
-                    <li>Alertas básicas (App/Web)</li>
-                    <li>1 Almacén</li>
-                    <li>Soporte estándar</li>
+                    <li data-i18n="plan_basic_li1">Real-time monitoring</li>
+                    <li data-i18n="plan_basic_li2">Basic alerts (App/Web)</li>
+                    <li data-i18n="plan_basic_li3">1 Warehouse</li>
+                    <li data-i18n="plan_basic_li4">Standard support</li>
                 </ul>
             </div>
 
             <div class="card plan-card plan-pro">
-                <div class="badge-recomendado">Recomendado</div>
-                <p class="text-light">Para empresas logisticas con multiples zonas de acceso</p>
-                <h3 class="text-white">Premium</h3>
-                <p class="plan-price text-white">$120<span class="text-small text-light"><br>por mes / facturación anual</span></p>
-                <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button-white w-100 mt-20">Empezar</a>
+                <div class="badge-recomendado" data-i18n="plan_badge">Recommended</div>
+
+                <p class="text-light" data-i18n="plan_premium_desc">
+                    For logistics companies with multiple access zones
+                </p>
+
+                <h3 class="text-white" data-i18n="plan_premium_title">Premium</h3>
+
+                <p class="plan-price text-white">
+                    <span data-i18n="plan_premium_price">$120</span>
+                    <span class="text-small text-light"><br>
+                        <span data-i18n="plan_period">per month / annual billing</span>
+                    </span>
+                </p>
+
+                <a href="#" class="button-white w-100 mt-20" data-i18n="btn_empezar">Get Started</a>
+
                 <ul class="plan-list text-white">
-                    <li>Todo lo del plan Básico</li>
-                    <li>Historial y auditoría</li>
-                    <li>Múltiples usuarios y roles</li>
-                    <li>Hasta 3 Almacenes</li>
+                    <li data-i18n="plan_premium_li1">Everything in Basic</li>
+                    <li data-i18n="plan_premium_li2">History and auditing</li>
+                    <li data-i18n="plan_premium_li3">Multiple users and roles</li>
+                    <li data-i18n="plan_premium_li4">Up to 3 Warehouses</li>
                 </ul>
             </div>
 
             <div class="card plan-card">
-                <h3 class="text-dark">Corporativo</h3>
-                <p class="text-muted">Seguridad de alto nivel y analítica para grandes infraestructuras</p>
-                <p class="plan-price text-primary">Cotizar<span class="text-small text-muted"><br>Diseñado a la medidad de tu operación</span></p>
-                <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button-outline w-100 mt-20">Empezar</a>
+                <h3 class="text-dark" data-i18n="plan_corp_title">Corporate</h3>
+                <p class="text-muted" data-i18n="plan_corp_desc">
+                    High-level security and analytics for large infrastructures
+                </p>
+
+                <p class="plan-price text-primary">
+                    <span data-i18n="plan_corp_price">Request a Quote</span>
+                    <span class="text-small text-muted"><br>
+                        <span data-i18n="plan_corp_period">Tailored to your operation</span>
+                    </span>
+                </p>
+
+                <a href="#" class="button-outline w-100 mt-20" data-i18n="btn_empezar">Get Started</a>
+
                 <ul class="plan-list text-muted">
-                    <li>Todo lo del plan Pro</li>
-                    <li>Almacenes ilimitados</li>
-                    <li>Reglas IoT automáticas</li>
-                    <li>Soporte 24/7 prioritario</li>
+                    <li data-i18n="plan_corp_li1">Everything in Pro</li>
+                    <li data-i18n="plan_corp_li2">Unlimited warehouses</li>
+                    <li data-i18n="plan_corp_li3">Automated IoT rules</li>
+                    <li data-i18n="plan_corp_li4">24/7 Priority support</li>
                 </ul>
             </div>
+
         </div>
     </div>
 
     <div id="equipo" class="team-section mt-60">
-        <p class="section-eyebrow">NUESTRO EQUIPO</p>
-        <h2 class="title-section text-center text-dark">Integrantes de Locksight</h2>
+        <p class="section-eyebrow" data-i18n="team_eyebrow">OUR TEAM</p>
+        <h2 class="title-section text-center text-dark" data-i18n="team_title">
+            Locksight Team Members
+        </h2>
+
         <div class="team-grid mt-30">
             <div class="team-member">
                 <img src="assets/AlonsoKohatsu.png.jpeg" alt="Alonso Enrique" class="member-img">
                 <h3 class="member-name text-dark">Alonso Enrique<br>Kohatsu Higa</h3>
-                <p class="member-role text-muted">Ingeniero de Software</p>
+                <p class="member-role text-muted" data-i18n="member_role">Software Engineer</p>
             </div>
+
             <div class="team-member">
                 <img src="assets/LuisBarbales.png.jpeg" alt="Luis Alexis" class="member-img">
                 <h3 class="member-name text-dark">Luis Alexis<br>Bardales Tejada</h3>
-                <p class="member-role text-muted">Ingeniero de Software</p>
+                <p class="member-role text-muted" data-i18n="member_role">Software Engineer</p>
             </div>
+
             <div class="team-member">
                 <img src="assets/FabricioLozano.png.jpeg" alt="Fabricio Jofred" class="member-img">
                 <h3 class="member-name text-dark">Fabricio Jofred<br>Lozano Quispe</h3>
-                <p class="member-role text-muted">Ingeniero de Software</p>
+                <p class="member-role text-muted" data-i18n="member_role">Software Engineer</p>
             </div>
+
             <div class="team-member">
                 <img src="assets/KelberSandoval.png.jpeg" alt="Kelber Yamir" class="member-img">
                 <h3 class="member-name text-dark">Kelber Yamir<br>Sandoval Aiquipa</h3>
-                <p class="member-role text-muted">Ingeniero de Software</p>
+                <p class="member-role text-muted" data-i18n="member_role">Software Engineer</p>
             </div>
+
             <div class="team-member">
                 <img src="assets/RodrigoVite.png.jpeg" alt="Rodrigo Matias" class="member-img">
                 <h3 class="member-name text-dark">Rodrigo Matias<br>Vite Celis</h3>
-                <p class="member-role text-muted">Ingeniero de Software</p>
+                <p class="member-role text-muted" data-i18n="member_role">Software Engineer</p>
             </div>
         </div>
     </div>
 
     <div class="cta-section mt-60 text-center">
-        <h2 class="title-section text-dark">¿Aún no te convence? ¡Regístrate y elige un plan!</h2>
-        <p class="text-muted cta-desc">Regístrate en minutos y accede a alguno de nuestros planes. Desde el primer mes vas a poder notar beneficios y no te va a costar utilizar la plataforma.</p>
-        <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button btn-large mt-20">Regístrate Ya</a>
+        <h2 class="title-section text-dark" data-i18n="cta_title">
+            Not convinced yet? Sign up and choose a plan!
+        </h2>
+
+        <p class="text-muted cta-desc" data-i18n="cta_desc">
+            Register in minutes and access one of our plans. You’ll see benefits from the first month.
+        </p>
+
+        <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button btn-large mt-20" data-i18n="btn_registrate_ya">
+            Sign Up Now
+        </a>
     </div>
 
 </div>
@@ -174,34 +242,41 @@
             <h2 class="logo-text text-white">locksight</h2>
             <p class="text-small text-light">watchgate</p>
         </div>
+
         <div>
-            <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button">Iniciar sesión</a>
+            <a href="https://upc-pre-202610-1asi0730-12144-watchgate.github.io/watchgate-webapp/" class="button" data-i18n="btn_iniciar_sesion">Log In</a>
         </div>
     </div>
+
     <hr class="footer-divider">
+
     <div class="container grid-3 mt-30 mb-30">
         <div class="footer-col">
-            <h3 class="text-white">Términos</h3>
+            <h3 class="text-white" data-i18n="footer_terms">Terms</h3>
             <ul>
-                <li><a href="#">Términos de Servicio</a></li>
-                <li><a href="#">Política de Privacidad</a></li>
-                <li><a href="#">Política de Cookies</a></li>
+                <li><a href="#" data-i18n="footer_terms_1">Terms of Service</a></li>
+                <li><a href="#" data-i18n="footer_privacy">Privacy Policy</a></li>
+                <li><a href="#" data-i18n="footer_cookies">Cookie Policy</a></li>
             </ul>
         </div>
+
         <div class="footer-col">
-            <h3 class="text-white">Soporte</h3>
+            <h3 class="text-white" data-i18n="footer_support">Support</h3>
             <ul>
                 <li><a href="#">Feedback</a></li>
-                <li><a href="#">Documentación</a></li>
+                <li data-i18n="footer_doc">Documentation</li>
             </ul>
         </div>
+
         <div class="footer-col">
-            <h3 class="text-white">Redes</h3>
+            <h3 class="text-white" data-i18n="footer_networks">Networks</h3>
             <div class="store-badges">
                 <div class="badge">[ App Store ]</div>
                 <div class="badge">[ Google Play ]</div>
             </div>
-            <h3 class="text-white mt-20">Síguenos en:</h3>
+
+            <h3 class="text-white mt-20" data-i18n="footer_follow">Follow us:</h3>
+
             <div class="social-links">
                 <a href="#">[ YT ]</a>
                 <a href="#">[ FB ]</a>
@@ -211,7 +286,9 @@
             </div>
         </div>
     </div>
+
     <hr class="footer-divider">
+
     <div class="container footer-bottom">
         <p class="text-left">&copy; 2026 Watchgate. All rights reserved.</p>
     </div>
