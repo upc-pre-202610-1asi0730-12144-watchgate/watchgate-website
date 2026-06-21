@@ -556,6 +556,31 @@ a:hover {
 .close-btn:hover {
     color: #333333;
 }
+.button-lang {
+    background-color: transparent;
+    color: #1a73e8;
+    padding: 8px 14px;
+    border: 2px solid #1a73e8;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button-lang:hover {
+    background-color: #1a73e8;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .button-lang {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        display: block;
+    }
+}
 
 @media (max-width: 1024px) {
     .team-grid { grid-template-columns: repeat(3, 1fr); }
